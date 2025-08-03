@@ -1,0 +1,84 @@
+---------------------------------------------------------------------------
+			  Information
+---------------------------------------------------------------------------
+Test ID:  	999959
+References: 	http://blog.gdssecurity.com/labs/2010/9/14/automated-padding-oracle-attacks-with-padbuster.html
+Message:  	Server may be vulnerable to MS10-070 (based on numeric calculation) and thus may allow a cryptographic padding oracle. This vulnerability must be manually validated. See: http://blog.gdssecurity.com/labs/2010/9/14/automated-padding-oracle-attacks-with-padbuster.html
+Reason:   	
+---------------------------------------------------------------------------
+			  Request
+---------------------------------------------------------------------------
+GET /webresource.axd?d=junk HTTP/1.1
+Host: 127.0.0.1
+Connection: Keep-Alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+
+---------------------------------------------------------------------------
+			  Response
+---------------------------------------------------------------------------
+HTTP/1.1 400 
+content-type: text/html;charset=utf-8
+content-language: en
+content-length: 2072
+date: Sat, 02 Aug 2025 12:06:07 GMT
+connection: close
+
+<!doctype html><html lang="en"><head><title>HTTP Status 400 – Bad Request</title><style type="text/css">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 400 – Bad Request</h1><hr class="line" /><p><b>Type</b> Exception Report</p><p><b>Message</b> Invalid character found in method name [GET0x0d&#47;webresource.axd?d=junk0x0dHTTP&#47;1.10x0d0x0aUser-Agent: ]. HTTP method names must be tokens</p><p><b>Description</b> The server cannot or will not process the request due to something that is perceived to be a client error (e.g., malformed request syntax, invalid request message framing, or deceptive request routing).</p><p><b>Exception</b></p><pre>java.lang.IllegalArgumentException: Invalid character found in method name [GET0x0d&#47;webresource.axd?d=junk0x0dHTTP&#47;1.10x0d0x0aUser-Agent: ]. HTTP method names must be tokens
+	org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:409)
+	org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:270)
+	org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	java.base&#47;java.lang.Thread.run(Thread.java:1447)
+</pre><p><b>Note</b> The full stack trace of the root cause is available in the server logs.</p><hr class="line" /><h3>Apache Tomcat/10.1.36</h3></body></html>
+---------------------------------------------------------------------------
+			  Data Objects
+---------------------------------------------------------------------------
+REQUEST:{"Host":"127.0.0.1","whisker":{"http_eol":"\r\n","ignore_duplicate_headers":0,"timeout":10,"keep-alive":1,"ssl_save_info":1,"force_bodysnatch":0,"anti_ids":"A","ssl_rsacertfile":null,"protocol":"HTTP","ssl":0,"trailing_slurp":0,"host":"127.0.0.1","ssl_certfile":null,"include_host_in_uri":0,"force_open":0,"version":"1.1","uri":"/webresource.axd?d=junk","MAGIC":31339,"uri_prefix":"","uri_postfix":"","invalid_protocol_return_value":1,"normalize_incoming_headers":1,"method":"GET","max_size":750000,"uri_param_sep":"?","port":8080,"require_newline_after_headers":0,"http_space2":" ","lowercase_incoming_headers":1,"retry":0,"force_close":0,"http_space1":" "},"Connection":"Keep-Alive","User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"}
+RESPONSE:{"content-length":"2072","connection":"close","content-type":"text/html;charset=utf-8","content-language":"en","whisker":{"stats_syns":6432,"stats_reqs":6421,"MAGIC":31340,"http_eol":"\r\n","uri_requested":"/webresource.axd?d=junk","message":"","data":"<!doctype html><html lang=\"en\"><head><title>HTTP Status 400 â Bad Request</title><style type=\"text/css\">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 400 â Bad Request</h1><hr class=\"line\" /><p><b>Type</b> Exception Report</p><p><b>Message</b> Invalid character found in method name [GET0x0d&#47;webresource.axd?d=junk0x0dHTTP&#47;1.10x0d0x0aUser-Agent: ]. HTTP method names must be tokens</p><p><b>Description</b> The server cannot or will not process the request due to something that is perceived to be a client error (e.g., malformed request syntax, invalid request message framing, or deceptive request routing).</p><p><b>Exception</b></p><pre>java.lang.IllegalArgumentException: Invalid character found in method name [GET0x0d&#47;webresource.axd?d=junk0x0dHTTP&#47;1.10x0d0x0aUser-Agent: ]. HTTP method names must be tokens\r\n\torg.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:409)\r\n\torg.apache.coyote.http11.Http11Processor.service(Http11Processor.java:270)\r\n\torg.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)\r\n\torg.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)\r\n\torg.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)\r\n\torg.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)\r\n\torg.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)\r\n\torg.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)\r\n\torg.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)\r\n\tjava.base&#47;java.lang.Thread.run(Thread.java:1447)\r\n</pre><p><b>Note</b> The full stack trace of the root cause is available in the server logs.</p><hr class=\"line\" /><h3>Apache Tomcat/10.1.36</h3></body></html>","http_space2":" ","lowercase_incoming_headers":1,"code":400,"protocol":"HTTP","socket_state":0,"header_order":["content-type","content-language","content-length","date","connection"],"uri":"/webresource.axd?d=junk","http_data_sent":1,"http_space1":" ","version":"1.1"},"date":"Sat, 02 Aug 2025 12:06:07 GMT"}
+---------------------------------------------------------------------------
+			  Information
+---------------------------------------------------------------------------
+Test ID:  	999959
+References: 	http://blog.gdssecurity.com/labs/2010/9/14/automated-padding-oracle-attacks-with-padbuster.html
+Message:  	Server may be vulnerable to MS10-070 (based on numeric calculation) and thus may allow a cryptographic padding oracle. This vulnerability must be manually validated. See: http://blog.gdssecurity.com/labs/2010/9/14/automated-padding-oracle-attacks-with-padbuster.html
+Reason:   	
+---------------------------------------------------------------------------
+			  Request
+---------------------------------------------------------------------------
+GET /webresource.axd?d=junk HTTP/1.1
+Host: 127.0.0.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+Connection: Keep-Alive
+
+---------------------------------------------------------------------------
+			  Response
+---------------------------------------------------------------------------
+HTTP/1.1 400 
+content-type: text/html;charset=utf-8
+content-language: en
+content-length: 2072
+date: Sat, 02 Aug 2025 12:07:11 GMT
+connection: close
+
+<!doctype html><html lang="en"><head><title>HTTP Status 400 – Bad Request</title><style type="text/css">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 400 – Bad Request</h1><hr class="line" /><p><b>Type</b> Exception Report</p><p><b>Message</b> Invalid character found in method name [GET0x0b&#47;webresource.axd?d=junk0x0bHTTP&#47;1.10x0d0x0aUser-Agent: ]. HTTP method names must be tokens</p><p><b>Description</b> The server cannot or will not process the request due to something that is perceived to be a client error (e.g., malformed request syntax, invalid request message framing, or deceptive request routing).</p><p><b>Exception</b></p><pre>java.lang.IllegalArgumentException: Invalid character found in method name [GET0x0b&#47;webresource.axd?d=junk0x0bHTTP&#47;1.10x0d0x0aUser-Agent: ]. HTTP method names must be tokens
+	org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:409)
+	org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:270)
+	org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	java.base&#47;java.lang.Thread.run(Thread.java:1447)
+</pre><p><b>Note</b> The full stack trace of the root cause is available in the server logs.</p><hr class="line" /><h3>Apache Tomcat/10.1.36</h3></body></html>
+---------------------------------------------------------------------------
+			  Data Objects
+---------------------------------------------------------------------------
+REQUEST:{"Host":"127.0.0.1","User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36","Connection":"Keep-Alive","whisker":{"force_close":0,"ssl_rsacertfile":null,"force_bodysnatch":0,"keep-alive":1,"normalize_incoming_headers":1,"uri_postfix":"","ssl_save_info":1,"protocol":"HTTP","retry":0,"uri_prefix":"","uri":"/webresource.axd?d=junk","include_host_in_uri":0,"trailing_slurp":0,"require_newline_after_headers":0,"host":"127.0.0.1","http_space1":" ","timeout":10,"version":"1.1","uri_param_sep":"?","invalid_protocol_return_value":1,"http_space2":" ","MAGIC":31339,"ignore_duplicate_headers":0,"port":8080,"anti_ids":"B","ssl_certfile":null,"max_size":750000,"force_open":0,"method":"GET","http_eol":"\r\n","lowercase_incoming_headers":1,"ssl":0}}
+RESPONSE:{"date":"Sat, 02 Aug 2025 12:07:11 GMT","content-length":"2072","whisker":{"header_order":["content-type","content-language","content-length","date","connection"],"stats_syns":6425,"message":"","http_space1":" ","http_eol":"\r\n","socket_state":0,"lowercase_incoming_headers":1,"data":"<!doctype html><html lang=\"en\"><head><title>HTTP Status 400 â Bad Request</title><style type=\"text/css\">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 400 â Bad Request</h1><hr class=\"line\" /><p><b>Type</b> Exception Report</p><p><b>Message</b> Invalid character found in method name [GET0x0b&#47;webresource.axd?d=junk0x0bHTTP&#47;1.10x0d0x0aUser-Agent: ]. HTTP method names must be tokens</p><p><b>Description</b> The server cannot or will not process the request due to something that is perceived to be a client error (e.g., malformed request syntax, invalid request message framing, or deceptive request routing).</p><p><b>Exception</b></p><pre>java.lang.IllegalArgumentException: Invalid character found in method name [GET0x0b&#47;webresource.axd?d=junk0x0bHTTP&#47;1.10x0d0x0aUser-Agent: ]. HTTP method names must be tokens\r\n\torg.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:409)\r\n\torg.apache.coyote.http11.Http11Processor.service(Http11Processor.java:270)\r\n\torg.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)\r\n\torg.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)\r\n\torg.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)\r\n\torg.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)\r\n\torg.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)\r\n\torg.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)\r\n\torg.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)\r\n\tjava.base&#47;java.lang.Thread.run(Thread.java:1447)\r\n</pre><p><b>Note</b> The full stack trace of the root cause is available in the server logs.</p><hr class=\"line\" /><h3>Apache Tomcat/10.1.36</h3></body></html>","uri":"/webresource.axd?d=junk","MAGIC":31340,"stats_reqs":6421,"http_space2":" ","uri_requested":"/webresource.axd?d=junk","http_data_sent":1,"protocol":"HTTP","code":400,"version":"1.1"},"content-language":"en","connection":"close","content-type":"text/html;charset=utf-8"}

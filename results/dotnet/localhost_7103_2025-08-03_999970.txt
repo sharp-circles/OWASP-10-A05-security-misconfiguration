@@ -1,0 +1,29 @@
+---------------------------------------------------------------------------
+			  Information
+---------------------------------------------------------------------------
+Test ID:  	999970
+References: 	https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security
+Message:  	/: The site uses TLS and the Strict-Transport-Security HTTP header is not defined. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security
+Reason:   	
+---------------------------------------------------------------------------
+			  Request
+---------------------------------------------------------------------------
+GET / HTTP/1.1
+Connection: Keep-Alive
+Host: localhost:7103
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+
+---------------------------------------------------------------------------
+			  Response
+---------------------------------------------------------------------------
+HTTP/1.1 404 Not Found
+content-length: 0
+date: Sun, 03 Aug 2025 10:22:40 GMT
+server: Kestrel
+
+
+---------------------------------------------------------------------------
+			  Data Objects
+---------------------------------------------------------------------------
+REQUEST:{"Connection":"Keep-Alive","Host":"localhost:7103","whisker":{"lowercase_incoming_headers":1,"method":"GET","ssl_rsacertfile":null,"http_space2":" ","require_newline_after_headers":0,"retry":0,"normalize_incoming_headers":1,"force_bodysnatch":0,"ssl":1,"ignore_duplicate_headers":0,"port":7103,"force_open":0,"ssl_certfile":null,"timeout":10,"MAGIC":31339,"keep-alive":1,"uri_param_sep":"?","invalid_protocol_return_value":1,"max_size":750000,"host":"localhost","uri_postfix":"","protocol":"HTTP","include_host_in_uri":0,"force_close":0,"uri_prefix":"","trailing_slurp":0,"version":"1.1","http_eol":"\r\n","ssl_save_info":1,"uri":"/","http_space1":" "},"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"}
+RESPONSE:{"date":"Sun, 03 Aug 2025 10:22:40 GMT","server":"Kestrel","whisker":{"code":404,"http_space1":" ","uri":"/","ssl_cert_issuer":"/CN=localhost","header_order":["content-length","date","server"],"ssl_cert_subject":"/CN=localhost","message":"Not Found","http_data_sent":1,"uri_requested":"/","data":"","MAGIC":31340,"ssl_cert_altnames":[2,"localhost"],"protocol":"HTTP","http_space2":" ","stats_reqs":2,"lowercase_incoming_headers":1,"ssl_cipher":"ECDHE-RSA-AES256-GCM-SHA384","version":"1.1","http_eol":"\r\n","stats_syns":2,"socket_state":0},"content-length":"0"}

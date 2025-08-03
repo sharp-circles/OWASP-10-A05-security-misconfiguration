@@ -1,0 +1,288 @@
+---------------------------------------------------------------------------
+			  Information
+---------------------------------------------------------------------------
+Test ID:  	999990
+References: 	
+Message:  	OPTIONS: Allowed HTTP Methods: GET, HEAD, POST, PUT, DELETE, OPTIONS .
+Reason:   	
+---------------------------------------------------------------------------
+			  Request
+---------------------------------------------------------------------------
+OPTIONS / HTTP/1.1
+Host: 127.0.0.1
+Connection: Keep-Alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+
+---------------------------------------------------------------------------
+			  Response
+---------------------------------------------------------------------------
+HTTP/1.1 404 
+content-type: text/html;charset=utf-8
+content-language: en
+content-length: 683
+date: Sat, 02 Aug 2025 11:59:44 GMT
+keep-alive: timeout=60
+connection: keep-alive
+
+<!doctype html><html lang="en"><head><title>HTTP Status 404 – Not Found</title><style type="text/css">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class="line" /><p><b>Type</b> Status Report</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class="line" /><h3>Apache Tomcat/10.1.36</h3></body></html>
+---------------------------------------------------------------------------
+			  Data Objects
+---------------------------------------------------------------------------
+REQUEST:{"whisker":{"force_open":0,"host":"127.0.0.1","uri_postfix":"","anti_ids":"6","keep-alive":1,"ssl_rsacertfile":null,"protocol":"HTTP","version":"1.1","http_eol":"\r\n","http_space1":" ","invalid_protocol_return_value":1,"http_space2":" ","retry":0,"MAGIC":31339,"force_close":0,"ignore_duplicate_headers":0,"force_bodysnatch":0,"uri":"/","uri_param_sep":"?","trailing_slurp":0,"normalize_incoming_headers":1,"ssl_certfile":null,"method":"OPTIONS","ssl_save_info":1,"port":8080,"include_host_in_uri":0,"ssl":0,"require_newline_after_headers":0,"lowercase_incoming_headers":1,"max_size":750000,"timeout":10,"uri_prefix":""},"Host":"127.0.0.1","Connection":"Keep-Alive","User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"}
+RESPONSE:{"whisker":{"data":"<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 â Not Found</title><style type=\"text/css\">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 â Not Found</h1><hr class=\"line\" /><p><b>Type</b> Status Report</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class=\"line\" /><h3>Apache Tomcat/10.1.36</h3></body></html>","http_space2":" ","header_order":["content-type","content-language","content-length","date","keep-alive","connection"],"code":404,"MAGIC":31340,"uri":"/","message":"","stats_syns":14,"http_data_sent":1,"socket_state":1,"lowercase_incoming_headers":1,"stats_reqs":756,"version":"1.1","protocol":"HTTP","uri_requested":"/","http_eol":"\r\n","http_space1":" "},"content-type":"text/html;charset=utf-8","connection":"keep-alive","content-length":"683","content-language":"en","keep-alive":"timeout=60","date":"Sat, 02 Aug 2025 11:59:44 GMT"}
+---------------------------------------------------------------------------
+			  Information
+---------------------------------------------------------------------------
+Test ID:  	999990
+References: 	
+Message:  	OPTIONS: Allowed HTTP Methods: GET, HEAD, POST, PUT, DELETE, OPTIONS .
+Reason:   	
+---------------------------------------------------------------------------
+			  Request
+---------------------------------------------------------------------------
+OPTIONS / HTTP/1.1
+Connection: Keep-Alive
+Host: 127.0.0.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+
+---------------------------------------------------------------------------
+			  Response
+---------------------------------------------------------------------------
+HTTP/1.1 404 
+content-type: text/html;charset=utf-8
+content-language: en
+content-length: 683
+date: Sat, 02 Aug 2025 12:02:19 GMT
+keep-alive: timeout=60
+connection: keep-alive
+
+<!doctype html><html lang="en"><head><title>HTTP Status 404 – Not Found</title><style type="text/css">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class="line" /><p><b>Type</b> Status Report</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class="line" /><h3>Apache Tomcat/10.1.36</h3></body></html>
+---------------------------------------------------------------------------
+			  Data Objects
+---------------------------------------------------------------------------
+REQUEST:{"Connection":"Keep-Alive","Host":"127.0.0.1","User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36","whisker":{"uri_param_sep":"?","method":"OPTIONS","trailing_slurp":0,"MAGIC":31339,"http_eol":"\r\n","ssl_certfile":null,"http_space1":" ","ssl":0,"ssl_save_info":1,"protocol":"HTTP","force_bodysnatch":0,"version":"1.1","anti_ids":"7","ssl_rsacertfile":null,"max_size":750000,"ignore_duplicate_headers":0,"force_open":0,"uri_prefix":"","invalid_protocol_return_value":1,"normalize_incoming_headers":1,"uri_postfix":"","keep-alive":1,"port":8080,"lowercase_incoming_headers":1,"retry":0,"uri":"/","host":"127.0.0.1","require_newline_after_headers":0,"force_close":0,"http_space2":" ","include_host_in_uri":0,"timeout":10}}
+RESPONSE:{"keep-alive":"timeout=60","connection":"keep-alive","date":"Sat, 02 Aug 2025 12:02:19 GMT","content-language":"en","whisker":{"protocol":"HTTP","http_space1":" ","http_eol":"\r\n","MAGIC":31340,"stats_reqs":756,"http_data_sent":1,"stats_syns":13,"header_order":["content-type","content-language","content-length","date","keep-alive","connection"],"code":404,"http_space2":" ","socket_state":1,"message":"","version":"1.1","uri":"/","lowercase_incoming_headers":1,"uri_requested":"/","data":"<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 â Not Found</title><style type=\"text/css\">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 â Not Found</h1><hr class=\"line\" /><p><b>Type</b> Status Report</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class=\"line\" /><h3>Apache Tomcat/10.1.36</h3></body></html>"},"content-type":"text/html;charset=utf-8","content-length":"683"}
+---------------------------------------------------------------------------
+			  Information
+---------------------------------------------------------------------------
+Test ID:  	999990
+References: 	
+Message:  	OPTIONS: Allowed HTTP Methods: GET, HEAD, POST, PUT, DELETE, OPTIONS .
+Reason:   	
+---------------------------------------------------------------------------
+			  Request
+---------------------------------------------------------------------------
+OPTIONS / HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+Host: 127.0.0.1
+Connection: Keep-Alive
+
+---------------------------------------------------------------------------
+			  Response
+---------------------------------------------------------------------------
+HTTP/1.1 404 
+content-type: text/html;charset=utf-8
+content-language: en
+content-length: 683
+date: Sat, 02 Aug 2025 12:04:53 GMT
+keep-alive: timeout=60
+connection: keep-alive
+
+<!doctype html><html lang="en"><head><title>HTTP Status 404 – Not Found</title><style type="text/css">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class="line" /><p><b>Type</b> Status Report</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class="line" /><h3>Apache Tomcat/10.1.36</h3></body></html>
+---------------------------------------------------------------------------
+			  Data Objects
+---------------------------------------------------------------------------
+REQUEST:{"whisker":{"retry":0,"version":"1.1","protocol":"HTTP","invalid_protocol_return_value":1,"force_bodysnatch":0,"http_eol":"\r\n","uri_postfix":"","ssl_certfile":null,"http_space1":" ","ssl_rsacertfile":null,"anti_ids":"8","keep-alive":1,"normalize_incoming_headers":1,"ssl":0,"uri_param_sep":"?","method":"OPTIONS","ignore_duplicate_headers":0,"uri":"/","port":8080,"include_host_in_uri":0,"require_newline_after_headers":0,"timeout":10,"uri_prefix":"","trailing_slurp":0,"http_space2":" ","ssl_save_info":1,"lowercase_incoming_headers":1,"force_close":0,"max_size":750000,"host":"127.0.0.1","MAGIC":31339,"force_open":0},"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36","Host":"127.0.0.1","Connection":"Keep-Alive"}
+RESPONSE:{"keep-alive":"timeout=60","whisker":{"MAGIC":31340,"stats_reqs":756,"http_eol":"\r\n","http_space2":" ","lowercase_incoming_headers":1,"message":"","header_order":["content-type","content-language","content-length","date","keep-alive","connection"],"uri_requested":"/","http_space1":" ","http_data_sent":1,"data":"<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 â Not Found</title><style type=\"text/css\">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 â Not Found</h1><hr class=\"line\" /><p><b>Type</b> Status Report</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class=\"line\" /><h3>Apache Tomcat/10.1.36</h3></body></html>","stats_syns":23,"uri":"/","socket_state":1,"version":"1.1","code":404,"protocol":"HTTP"},"content-type":"text/html;charset=utf-8","content-language":"en","date":"Sat, 02 Aug 2025 12:04:53 GMT","connection":"keep-alive","content-length":"683"}
+---------------------------------------------------------------------------
+			  Information
+---------------------------------------------------------------------------
+Test ID:  	999990
+References: 	
+Message:  	OPTIONS: Allowed HTTP Methods: GET, HEAD, POST, PUT, DELETE, OPTIONS .
+Reason:   	
+---------------------------------------------------------------------------
+			  Request
+---------------------------------------------------------------------------
+OPTIONS / HTTP/1.1
+Connection: Keep-Alive
+Host: 127.0.0.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+
+---------------------------------------------------------------------------
+			  Response
+---------------------------------------------------------------------------
+HTTP/1.1 404 
+content-type: text/html;charset=utf-8
+content-language: en
+content-length: 683
+date: Sat, 02 Aug 2025 12:08:49 GMT
+keep-alive: timeout=60
+connection: keep-alive
+
+<!doctype html><html lang="en"><head><title>HTTP Status 404 – Not Found</title><style type="text/css">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class="line" /><p><b>Type</b> Status Report</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class="line" /><h3>Apache Tomcat/10.1.36</h3></body></html>
+---------------------------------------------------------------------------
+			  Data Objects
+---------------------------------------------------------------------------
+REQUEST:{"Connection":"Keep-Alive","Host":"127.0.0.1","User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36","whisker":{"uri_prefix":"","port":8080,"uri":"/","method":"OPTIONS","version":"1.1","uri_param_sep":"?","require_newline_after_headers":0,"timeout":10,"force_open":0,"keep-alive":1,"ssl":0,"ignore_duplicate_headers":0,"ssl_certfile":null,"MAGIC":31339,"ssl_rsacertfile":null,"http_space2":" ","uri_postfix":"","retry":0,"trailing_slurp":0,"host":"127.0.0.1","lowercase_incoming_headers":1,"force_bodysnatch":0,"http_space1":" ","force_close":0,"invalid_protocol_return_value":1,"include_host_in_uri":0,"http_eol":"\r\n","normalize_incoming_headers":1,"protocol":"HTTP","max_size":750000,"ssl_save_info":1}}
+RESPONSE:{"content-language":"en","whisker":{"message":"","protocol":"HTTP","http_eol":"\r\n","uri_requested":"/","http_space2":" ","MAGIC":31340,"stats_syns":14,"code":404,"stats_reqs":759,"http_data_sent":1,"http_space1":" ","data":"<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 â Not Found</title><style type=\"text/css\">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 â Not Found</h1><hr class=\"line\" /><p><b>Type</b> Status Report</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class=\"line\" /><h3>Apache Tomcat/10.1.36</h3></body></html>","lowercase_incoming_headers":1,"version":"1.1","header_order":["content-type","content-language","content-length","date","keep-alive","connection"],"uri":"/","socket_state":1},"keep-alive":"timeout=60","date":"Sat, 02 Aug 2025 12:08:49 GMT","connection":"keep-alive","content-type":"text/html;charset=utf-8","content-length":"683"}
+---------------------------------------------------------------------------
+			  Information
+---------------------------------------------------------------------------
+Test ID:  	999990
+References: 	
+Message:  	OPTIONS: Allowed HTTP Methods: GET, HEAD, POST, PUT, DELETE, OPTIONS .
+Reason:   	
+---------------------------------------------------------------------------
+			  Request
+---------------------------------------------------------------------------
+OPTIONS / HTTP/1.1
+Host: 127.0.0.1
+Connection: Keep-Alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+
+---------------------------------------------------------------------------
+			  Response
+---------------------------------------------------------------------------
+HTTP/1.1 404 
+content-type: text/html;charset=utf-8
+content-language: en
+content-length: 683
+date: Sat, 02 Aug 2025 13:27:30 GMT
+keep-alive: timeout=60
+connection: keep-alive
+
+<!doctype html><html lang="en"><head><title>HTTP Status 404 – Not Found</title><style type="text/css">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class="line" /><p><b>Type</b> Status Report</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class="line" /><h3>Apache Tomcat/10.1.36</h3></body></html>
+---------------------------------------------------------------------------
+			  Data Objects
+---------------------------------------------------------------------------
+REQUEST:{"Host":"127.0.0.1","whisker":{"normalize_incoming_headers":1,"http_space2":" ","ssl":0,"host":"127.0.0.1","protocol":"HTTP","trailing_slurp":0,"ignore_duplicate_headers":0,"ssl_save_info":1,"http_eol":"\r\n","force_open":0,"uri_param_sep":"?","include_host_in_uri":0,"uri_prefix":"","ssl_rsacertfile":null,"ssl_certfile":null,"http_space1":" ","MAGIC":31339,"port":8080,"force_close":0,"require_newline_after_headers":0,"uri_postfix":"","invalid_protocol_return_value":1,"version":"1.1","method":"OPTIONS","max_size":750000,"uri":"/","timeout":10,"retry":0,"keep-alive":1,"force_bodysnatch":0,"lowercase_incoming_headers":1},"Connection":"Keep-Alive","User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"}
+RESPONSE:{"date":"Sat, 02 Aug 2025 13:27:30 GMT","keep-alive":"timeout=60","content-type":"text/html;charset=utf-8","content-language":"en","whisker":{"version":"1.1","header_order":["content-type","content-language","content-length","date","keep-alive","connection"],"stats_syns":14,"uri":"/","http_eol":"\r\n","lowercase_incoming_headers":1,"socket_state":1,"stats_reqs":759,"http_space2":" ","http_space1":" ","message":"","protocol":"HTTP","MAGIC":31340,"uri_requested":"/","http_data_sent":1,"data":"<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 â Not Found</title><style type=\"text/css\">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 â Not Found</h1><hr class=\"line\" /><p><b>Type</b> Status Report</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class=\"line\" /><h3>Apache Tomcat/10.1.36</h3></body></html>","code":404},"content-length":"683","connection":"keep-alive"}
+---------------------------------------------------------------------------
+			  Information
+---------------------------------------------------------------------------
+Test ID:  	999990
+References: 	
+Message:  	OPTIONS: Allowed HTTP Methods: GET, HEAD, POST, PUT, DELETE, OPTIONS .
+Reason:   	
+---------------------------------------------------------------------------
+			  Request
+---------------------------------------------------------------------------
+OPTIONS / HTTP/1.1
+Host: 127.0.0.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+Connection: Keep-Alive
+
+---------------------------------------------------------------------------
+			  Response
+---------------------------------------------------------------------------
+HTTP/1.1 404 
+content-type: text/html;charset=utf-8
+content-language: en
+content-length: 683
+date: Sat, 02 Aug 2025 13:43:42 GMT
+keep-alive: timeout=60
+connection: keep-alive
+
+<!doctype html><html lang="en"><head><title>HTTP Status 404 – Not Found</title><style type="text/css">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class="line" /><p><b>Type</b> Status Report</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class="line" /><h3>Apache Tomcat/10.1.36</h3></body></html>
+---------------------------------------------------------------------------
+			  Data Objects
+---------------------------------------------------------------------------
+REQUEST:{"Host":"127.0.0.1","whisker":{"force_close":0,"http_eol":"\r\n","force_open":0,"ssl":0,"ssl_certfile":null,"uri_prefix":"","method":"OPTIONS","protocol":"HTTP","require_newline_after_headers":0,"version":"1.1","include_host_in_uri":0,"http_space2":" ","trailing_slurp":0,"max_size":750000,"ignore_duplicate_headers":0,"uri":"/","port":8080,"ssl_rsacertfile":null,"keep-alive":1,"uri_postfix":"","host":"127.0.0.1","http_space1":" ","timeout":10,"retry":0,"normalize_incoming_headers":1,"lowercase_incoming_headers":1,"uri_param_sep":"?","invalid_protocol_return_value":1,"force_bodysnatch":0,"ssl_save_info":1,"MAGIC":31339},"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36","Connection":"Keep-Alive"}
+RESPONSE:{"whisker":{"lowercase_incoming_headers":1,"data":"<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 â Not Found</title><style type=\"text/css\">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 â Not Found</h1><hr class=\"line\" /><p><b>Type</b> Status Report</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class=\"line\" /><h3>Apache Tomcat/10.1.36</h3></body></html>","protocol":"HTTP","header_order":["content-type","content-language","content-length","date","keep-alive","connection"],"http_data_sent":1,"MAGIC":31340,"stats_syns":14,"uri_requested":"/","http_space1":" ","http_eol":"\r\n","message":"","socket_state":1,"http_space2":" ","version":"1.1","stats_reqs":760,"uri":"/","code":404},"content-language":"en","content-type":"text/html;charset=utf-8","keep-alive":"timeout=60","content-length":"683","connection":"keep-alive","date":"Sat, 02 Aug 2025 13:43:42 GMT"}
+---------------------------------------------------------------------------
+			  Information
+---------------------------------------------------------------------------
+Test ID:  	999990
+References: 	
+Message:  	OPTIONS: Allowed HTTP Methods: GET, HEAD, POST, PUT, DELETE, OPTIONS .
+Reason:   	
+---------------------------------------------------------------------------
+			  Request
+---------------------------------------------------------------------------
+OPTIONS / HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+Connection: Keep-Alive
+Host: 127.0.0.1
+
+---------------------------------------------------------------------------
+			  Response
+---------------------------------------------------------------------------
+HTTP/1.1 404 
+content-type: text/html;charset=utf-8
+content-language: en
+content-length: 683
+date: Sat, 02 Aug 2025 13:46:58 GMT
+keep-alive: timeout=60
+connection: keep-alive
+
+<!doctype html><html lang="en"><head><title>HTTP Status 404 – Not Found</title><style type="text/css">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class="line" /><p><b>Type</b> Status Report</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class="line" /><h3>Apache Tomcat/10.1.36</h3></body></html>
+---------------------------------------------------------------------------
+			  Data Objects
+---------------------------------------------------------------------------
+REQUEST:{"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36","whisker":{"lowercase_incoming_headers":1,"include_host_in_uri":0,"protocol":"HTTP","http_space1":" ","keep-alive":1,"timeout":10,"ssl_save_info":1,"version":"1.1","normalize_incoming_headers":1,"force_open":0,"uri_param_sep":"?","http_eol":"\r\n","uri_prefix":"","force_close":0,"trailing_slurp":0,"host":"127.0.0.1","invalid_protocol_return_value":1,"uri":"/","ssl":0,"ssl_rsacertfile":null,"method":"OPTIONS","uri_postfix":"","force_bodysnatch":0,"require_newline_after_headers":0,"MAGIC":31339,"port":8080,"http_space2":" ","retry":0,"ssl_certfile":null,"ignore_duplicate_headers":0,"max_size":750000},"Connection":"Keep-Alive","Host":"127.0.0.1"}
+RESPONSE:{"date":"Sat, 02 Aug 2025 13:46:58 GMT","content-length":"683","connection":"keep-alive","keep-alive":"timeout=60","content-language":"en","content-type":"text/html;charset=utf-8","whisker":{"stats_syns":14,"MAGIC":31340,"header_order":["content-type","content-language","content-length","date","keep-alive","connection"],"http_eol":"\r\n","uri_requested":"/","http_space2":" ","message":"","socket_state":1,"lowercase_incoming_headers":1,"http_data_sent":1,"protocol":"HTTP","uri":"/","http_space1":" ","code":404,"version":"1.1","stats_reqs":760,"data":"<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 â Not Found</title><style type=\"text/css\">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 â Not Found</h1><hr class=\"line\" /><p><b>Type</b> Status Report</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class=\"line\" /><h3>Apache Tomcat/10.1.36</h3></body></html>"}}
+---------------------------------------------------------------------------
+			  Information
+---------------------------------------------------------------------------
+Test ID:  	999990
+References: 	
+Message:  	OPTIONS: Allowed HTTP Methods: GET, HEAD, POST, PUT, DELETE, OPTIONS .
+Reason:   	
+---------------------------------------------------------------------------
+			  Request
+---------------------------------------------------------------------------
+OPTIONS / HTTP/1.1
+Connection: Keep-Alive
+Host: 127.0.0.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+
+---------------------------------------------------------------------------
+			  Response
+---------------------------------------------------------------------------
+HTTP/1.1 404 
+content-type: text/html;charset=utf-8
+content-language: en
+content-length: 683
+date: Sat, 02 Aug 2025 13:53:29 GMT
+keep-alive: timeout=60
+connection: keep-alive
+
+<!doctype html><html lang="en"><head><title>HTTP Status 404 – Not Found</title><style type="text/css">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class="line" /><p><b>Type</b> Status Report</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class="line" /><h3>Apache Tomcat/10.1.36</h3></body></html>
+---------------------------------------------------------------------------
+			  Data Objects
+---------------------------------------------------------------------------
+REQUEST:{"Connection":"Keep-Alive","whisker":{"include_host_in_uri":0,"ssl_save_info":1,"normalize_incoming_headers":1,"http_space1":" ","host":"127.0.0.1","uri":"/","method":"OPTIONS","invalid_protocol_return_value":1,"MAGIC":31339,"http_eol":"\r\n","trailing_slurp":0,"keep-alive":1,"ssl_rsacertfile":null,"require_newline_after_headers":0,"uri_param_sep":"?","force_open":0,"uri_postfix":"","protocol":"HTTP","retry":0,"ssl":0,"uri_prefix":"","max_size":750000,"version":"1.1","timeout":10,"http_space2":" ","port":8080,"ignore_duplicate_headers":0,"force_bodysnatch":0,"ssl_certfile":null,"force_close":0,"lowercase_incoming_headers":1},"Host":"127.0.0.1","User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"}
+RESPONSE:{"content-length":"683","keep-alive":"timeout=60","date":"Sat, 02 Aug 2025 13:53:29 GMT","content-language":"en","connection":"keep-alive","content-type":"text/html;charset=utf-8","whisker":{"http_eol":"\r\n","socket_state":1,"http_space2":" ","version":"1.1","data":"<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 â Not Found</title><style type=\"text/css\">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 â Not Found</h1><hr class=\"line\" /><p><b>Type</b> Status Report</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class=\"line\" /><h3>Apache Tomcat/10.1.36</h3></body></html>","http_data_sent":1,"message":"","lowercase_incoming_headers":1,"uri_requested":"/","http_space1":" ","protocol":"HTTP","code":404,"stats_syns":14,"header_order":["content-type","content-language","content-length","date","keep-alive","connection"],"uri":"/","MAGIC":31340,"stats_reqs":759}}
+---------------------------------------------------------------------------
+			  Information
+---------------------------------------------------------------------------
+Test ID:  	999990
+References: 	
+Message:  	OPTIONS: Allowed HTTP Methods: GET, HEAD, POST, PUT, DELETE, OPTIONS .
+Reason:   	
+---------------------------------------------------------------------------
+			  Request
+---------------------------------------------------------------------------
+OPTIONS / HTTP/1.1
+Connection: Keep-Alive
+Host: 127.0.0.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+
+---------------------------------------------------------------------------
+			  Response
+---------------------------------------------------------------------------
+HTTP/1.1 404 
+content-type: text/html;charset=utf-8
+content-language: en
+content-length: 683
+date: Sat, 02 Aug 2025 14:24:54 GMT
+keep-alive: timeout=60
+connection: keep-alive
+
+<!doctype html><html lang="en"><head><title>HTTP Status 404 – Not Found</title><style type="text/css">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class="line" /><p><b>Type</b> Status Report</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class="line" /><h3>Apache Tomcat/10.1.36</h3></body></html>
+---------------------------------------------------------------------------
+			  Data Objects
+---------------------------------------------------------------------------
+REQUEST:{"whisker":{"ssl_save_info":1,"uri_param_sep":"?","include_host_in_uri":0,"uri_prefix":"","trailing_slurp":0,"force_bodysnatch":0,"host":"127.0.0.1","method":"OPTIONS","version":"1.1","keep-alive":1,"MAGIC":31339,"http_eol":"\r\n","max_size":750000,"lowercase_incoming_headers":1,"http_space1":" ","retry":0,"ssl_certfile":null,"ssl_rsacertfile":null,"uri":"/","http_space2":" ","normalize_incoming_headers":1,"ssl":0,"force_open":0,"force_close":0,"uri_postfix":"","invalid_protocol_return_value":1,"require_newline_after_headers":0,"protocol":"HTTP","port":8080,"ignore_duplicate_headers":0,"timeout":10},"Connection":"Keep-Alive","Host":"127.0.0.1","User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"}
+RESPONSE:{"content-type":"text/html;charset=utf-8","whisker":{"lowercase_incoming_headers":1,"header_order":["content-type","content-language","content-length","date","keep-alive","connection"],"http_eol":"\r\n","data":"<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 â Not Found</title><style type=\"text/css\">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 â Not Found</h1><hr class=\"line\" /><p><b>Type</b> Status Report</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class=\"line\" /><h3>Apache Tomcat/10.1.36</h3></body></html>","socket_state":1,"http_data_sent":1,"message":"","stats_syns":13,"uri_requested":"/","protocol":"HTTP","http_space1":" ","stats_reqs":756,"code":404,"uri":"/","version":"1.1","MAGIC":31340,"http_space2":" "},"content-language":"en","date":"Sat, 02 Aug 2025 14:24:54 GMT","content-length":"683","connection":"keep-alive","keep-alive":"timeout=60"}

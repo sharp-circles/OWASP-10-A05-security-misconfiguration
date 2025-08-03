@@ -1,0 +1,145 @@
+---------------------------------------------------------------------------
+			  Information
+---------------------------------------------------------------------------
+Test ID:  	013587
+References: 	https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security
+Message:  	/: Suggested security header missing: strict-transport-security. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security
+Reason:   	
+---------------------------------------------------------------------------
+			  Request
+---------------------------------------------------------------------------
+GET / HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+Host: localhost:7103
+Connection: Keep-Alive
+
+---------------------------------------------------------------------------
+			  Response
+---------------------------------------------------------------------------
+HTTP/1.1 404 Not Found
+content-length: 0
+date: Sun, 03 Aug 2025 10:22:43 GMT
+server: Kestrel
+
+
+---------------------------------------------------------------------------
+			  Data Objects
+---------------------------------------------------------------------------
+REQUEST:{"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36","whisker":{"keep-alive":1,"uri_param_sep":"?","MAGIC":31339,"timeout":10,"ssl_certfile":null,"force_open":0,"ignore_duplicate_headers":0,"port":7103,"ssl":1,"force_bodysnatch":0,"normalize_incoming_headers":1,"retry":0,"http_space2":" ","require_newline_after_headers":0,"ssl_rsacertfile":null,"method":"GET","lowercase_incoming_headers":1,"http_space1":" ","ssl_save_info":1,"uri":"/","uri_prefix":"","trailing_slurp":0,"http_eol":"\r\n","version":"1.1","include_host_in_uri":0,"force_close":0,"uri_postfix":"","protocol":"HTTP","host":"localhost","max_size":750000,"invalid_protocol_return_value":1},"Host":"localhost:7103","Connection":"Keep-Alive"}
+RESPONSE:{"content-length":"0","server":"Kestrel","whisker":{"ssl_cert_issuer":"/CN=localhost","header_order":["content-length","date","server"],"uri":"/","http_space1":" ","code":404,"uri_requested":"/","ssl_cert_altnames":[2,"localhost"],"data":"","MAGIC":31340,"ssl_cert_subject":"/CN=localhost","http_data_sent":1,"message":"Not Found","stats_reqs":289,"ssl_cipher":"ECDHE-RSA-AES256-GCM-SHA384","lowercase_incoming_headers":1,"protocol":"HTTP","http_space2":" ","stats_syns":289,"socket_state":0,"http_eol":"\r\n","version":"1.1"},"date":"Sun, 03 Aug 2025 10:22:43 GMT"}
+---------------------------------------------------------------------------
+			  Information
+---------------------------------------------------------------------------
+Test ID:  	013587
+References: 	https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
+Message:  	/: Suggested security header missing: content-security-policy. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
+Reason:   	
+---------------------------------------------------------------------------
+			  Request
+---------------------------------------------------------------------------
+GET / HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+Host: localhost:7103
+Connection: Keep-Alive
+
+---------------------------------------------------------------------------
+			  Response
+---------------------------------------------------------------------------
+HTTP/1.1 404 Not Found
+content-length: 0
+date: Sun, 03 Aug 2025 10:22:43 GMT
+server: Kestrel
+
+
+---------------------------------------------------------------------------
+			  Data Objects
+---------------------------------------------------------------------------
+REQUEST:{"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36","whisker":{"keep-alive":1,"uri_param_sep":"?","MAGIC":31339,"timeout":10,"ssl_certfile":null,"force_open":0,"ignore_duplicate_headers":0,"port":7103,"ssl":1,"force_bodysnatch":0,"normalize_incoming_headers":1,"retry":0,"http_space2":" ","require_newline_after_headers":0,"ssl_rsacertfile":null,"method":"GET","lowercase_incoming_headers":1,"http_space1":" ","ssl_save_info":1,"uri":"/","uri_prefix":"","trailing_slurp":0,"http_eol":"\r\n","version":"1.1","include_host_in_uri":0,"force_close":0,"uri_postfix":"","protocol":"HTTP","host":"localhost","max_size":750000,"invalid_protocol_return_value":1},"Host":"localhost:7103","Connection":"Keep-Alive"}
+RESPONSE:{"content-length":"0","server":"Kestrel","whisker":{"ssl_cert_issuer":"/CN=localhost","header_order":["content-length","date","server"],"uri":"/","http_space1":" ","code":404,"uri_requested":"/","ssl_cert_altnames":[2,"localhost"],"data":"","MAGIC":31340,"ssl_cert_subject":"/CN=localhost","http_data_sent":1,"message":"Not Found","stats_reqs":289,"ssl_cipher":"ECDHE-RSA-AES256-GCM-SHA384","lowercase_incoming_headers":1,"protocol":"HTTP","http_space2":" ","stats_syns":289,"socket_state":0,"http_eol":"\r\n","version":"1.1"},"date":"Sun, 03 Aug 2025 10:22:43 GMT"}
+---------------------------------------------------------------------------
+			  Information
+---------------------------------------------------------------------------
+Test ID:  	013587
+References: 	https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options
+Message:  	/: Suggested security header missing: x-content-type-options. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options
+Reason:   	
+---------------------------------------------------------------------------
+			  Request
+---------------------------------------------------------------------------
+GET / HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+Host: localhost:7103
+Connection: Keep-Alive
+
+---------------------------------------------------------------------------
+			  Response
+---------------------------------------------------------------------------
+HTTP/1.1 404 Not Found
+content-length: 0
+date: Sun, 03 Aug 2025 10:22:43 GMT
+server: Kestrel
+
+
+---------------------------------------------------------------------------
+			  Data Objects
+---------------------------------------------------------------------------
+REQUEST:{"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36","whisker":{"keep-alive":1,"uri_param_sep":"?","MAGIC":31339,"timeout":10,"ssl_certfile":null,"force_open":0,"ignore_duplicate_headers":0,"port":7103,"ssl":1,"force_bodysnatch":0,"normalize_incoming_headers":1,"retry":0,"http_space2":" ","require_newline_after_headers":0,"ssl_rsacertfile":null,"method":"GET","lowercase_incoming_headers":1,"http_space1":" ","ssl_save_info":1,"uri":"/","uri_prefix":"","trailing_slurp":0,"http_eol":"\r\n","version":"1.1","include_host_in_uri":0,"force_close":0,"uri_postfix":"","protocol":"HTTP","host":"localhost","max_size":750000,"invalid_protocol_return_value":1},"Host":"localhost:7103","Connection":"Keep-Alive"}
+RESPONSE:{"content-length":"0","server":"Kestrel","whisker":{"ssl_cert_issuer":"/CN=localhost","header_order":["content-length","date","server"],"uri":"/","http_space1":" ","code":404,"uri_requested":"/","ssl_cert_altnames":[2,"localhost"],"data":"","MAGIC":31340,"ssl_cert_subject":"/CN=localhost","http_data_sent":1,"message":"Not Found","stats_reqs":289,"ssl_cipher":"ECDHE-RSA-AES256-GCM-SHA384","lowercase_incoming_headers":1,"protocol":"HTTP","http_space2":" ","stats_syns":289,"socket_state":0,"http_eol":"\r\n","version":"1.1"},"date":"Sun, 03 Aug 2025 10:22:43 GMT"}
+---------------------------------------------------------------------------
+			  Information
+---------------------------------------------------------------------------
+Test ID:  	013587
+References: 	https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy
+Message:  	/: Suggested security header missing: referrer-policy. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy
+Reason:   	
+---------------------------------------------------------------------------
+			  Request
+---------------------------------------------------------------------------
+GET / HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+Host: localhost:7103
+Connection: Keep-Alive
+
+---------------------------------------------------------------------------
+			  Response
+---------------------------------------------------------------------------
+HTTP/1.1 404 Not Found
+content-length: 0
+date: Sun, 03 Aug 2025 10:22:43 GMT
+server: Kestrel
+
+
+---------------------------------------------------------------------------
+			  Data Objects
+---------------------------------------------------------------------------
+REQUEST:{"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36","whisker":{"keep-alive":1,"uri_param_sep":"?","MAGIC":31339,"timeout":10,"ssl_certfile":null,"force_open":0,"ignore_duplicate_headers":0,"port":7103,"ssl":1,"force_bodysnatch":0,"normalize_incoming_headers":1,"retry":0,"http_space2":" ","require_newline_after_headers":0,"ssl_rsacertfile":null,"method":"GET","lowercase_incoming_headers":1,"http_space1":" ","ssl_save_info":1,"uri":"/","uri_prefix":"","trailing_slurp":0,"http_eol":"\r\n","version":"1.1","include_host_in_uri":0,"force_close":0,"uri_postfix":"","protocol":"HTTP","host":"localhost","max_size":750000,"invalid_protocol_return_value":1},"Host":"localhost:7103","Connection":"Keep-Alive"}
+RESPONSE:{"content-length":"0","server":"Kestrel","whisker":{"ssl_cert_issuer":"/CN=localhost","header_order":["content-length","date","server"],"uri":"/","http_space1":" ","code":404,"uri_requested":"/","ssl_cert_altnames":[2,"localhost"],"data":"","MAGIC":31340,"ssl_cert_subject":"/CN=localhost","http_data_sent":1,"message":"Not Found","stats_reqs":289,"ssl_cipher":"ECDHE-RSA-AES256-GCM-SHA384","lowercase_incoming_headers":1,"protocol":"HTTP","http_space2":" ","stats_syns":289,"socket_state":0,"http_eol":"\r\n","version":"1.1"},"date":"Sun, 03 Aug 2025 10:22:43 GMT"}
+---------------------------------------------------------------------------
+			  Information
+---------------------------------------------------------------------------
+Test ID:  	013587
+References: 	https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy
+Message:  	/: Suggested security header missing: permissions-policy. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy
+Reason:   	
+---------------------------------------------------------------------------
+			  Request
+---------------------------------------------------------------------------
+GET / HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+Host: localhost:7103
+Connection: Keep-Alive
+
+---------------------------------------------------------------------------
+			  Response
+---------------------------------------------------------------------------
+HTTP/1.1 404 Not Found
+content-length: 0
+date: Sun, 03 Aug 2025 10:22:43 GMT
+server: Kestrel
+
+
+---------------------------------------------------------------------------
+			  Data Objects
+---------------------------------------------------------------------------
+REQUEST:{"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36","whisker":{"keep-alive":1,"uri_param_sep":"?","MAGIC":31339,"timeout":10,"ssl_certfile":null,"force_open":0,"ignore_duplicate_headers":0,"port":7103,"ssl":1,"force_bodysnatch":0,"normalize_incoming_headers":1,"retry":0,"http_space2":" ","require_newline_after_headers":0,"ssl_rsacertfile":null,"method":"GET","lowercase_incoming_headers":1,"http_space1":" ","ssl_save_info":1,"uri":"/","uri_prefix":"","trailing_slurp":0,"http_eol":"\r\n","version":"1.1","include_host_in_uri":0,"force_close":0,"uri_postfix":"","protocol":"HTTP","host":"localhost","max_size":750000,"invalid_protocol_return_value":1},"Host":"localhost:7103","Connection":"Keep-Alive"}
+RESPONSE:{"content-length":"0","server":"Kestrel","whisker":{"ssl_cert_issuer":"/CN=localhost","header_order":["content-length","date","server"],"uri":"/","http_space1":" ","code":404,"uri_requested":"/","ssl_cert_altnames":[2,"localhost"],"data":"","MAGIC":31340,"ssl_cert_subject":"/CN=localhost","http_data_sent":1,"message":"Not Found","stats_reqs":289,"ssl_cipher":"ECDHE-RSA-AES256-GCM-SHA384","lowercase_incoming_headers":1,"protocol":"HTTP","http_space2":" ","stats_syns":289,"socket_state":0,"http_eol":"\r\n","version":"1.1"},"date":"Sun, 03 Aug 2025 10:22:43 GMT"}
