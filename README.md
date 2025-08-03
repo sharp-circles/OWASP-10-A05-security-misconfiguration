@@ -48,74 +48,78 @@ Initially, scanning the local host on standard web ports yielded no results, ind
 
 ```bash
 perl nikto.pl -h 192.168.1.135
+````
 
-*To gain more insight, increasing verbosity was crucial:
+To gain more insight, increasing verbosity was crucial:
 
-Bash
-
+```bash
 perl nikto.pl -h 192.168.1.135 -Display V
+```
+
 This revealed that no service was listening on port 80. Trying port 443 also yielded no results.
 
-Bash
-
+```bash
 perl nikto.pl -h 192.168.1.135 -Display V -p 443
-The breakthrough came when targeting the specific port of our running application and using localhost:
+```
 
-Bash
+The breakthrough came when targeting the specific port of our running application and using `localhost`:
 
+```bash
 perl nikto.pl -h localhost -Display V -p 7103
-Generating Reports
-To obtain a structured output of the scan results, using the -o (output) flag with a format is necessary. Always consult the CLI help (perl nikto.pl -H or man nikto) for the most accurate syntax.
+```
 
-Bash
+### Generating Reports
 
+To obtain a structured output of the scan results, using the `-o` (output) flag with a format is necessary. Always consult the CLI help (`perl nikto.pl -H` or `man nikto`) for the most accurate syntax.
+
+```bash
 # Incorrect attempt
 perl nikto.pl -h localhost -Display V -p 7103 -Format HTML
 
 # Corrected command for HTML output
 perl nikto.pl -h localhost -Display V -p 7103 -o report.html
-The final reports are available in the reports/ directory of this repository.
+```
 
-Executing Nikto Against WebGoat
+The final reports are available in the `reports/` directory of this repository.
+
+## Executing Nikto Against WebGoat
+
 To further test Nikto's capabilities and against a known vulnerable application, WebGoat (from OWASP) was used.
 
-Set the timezone environment variable:
+1.  Set the timezone environment variable:
+    ```bash
+    export TZ=Europe/Amsterdam # or your timezone
+    ```
+2.  Run the WebGoat application:
+    ```bash
+    java -Dfile.encoding=UTF-8 -jar webgoat-2025.3.jar
+    ```
+3.  Execute Nikto against WebGoat:
+    ```bash
+    perl nikto.pl -h [http://127.0.0.1:8080](http://127.0.0.1:8080) -Display V -o wg.html -S wg-results
+    ```
 
-Bash
-
-export TZ=Europe/Amsterdam # or your timezone
-Run the WebGoat application:
-
-Bash
-
-java -Dfile.encoding=UTF-8 -jar webgoat-2025.3.jar
-Execute Nikto against WebGoat:
-
-Bash
-
-perl nikto.pl -h [http://127.0.0.1:8080](http://127.0.0.1:8080) -Display V -o wg.html -S wg-results
 While WebGoat did provide some additional findings, such as exploitable HTTP methods, the overall difference in the extent of reported vulnerabilities was not as remarkable as anticipated, possibly due to the nature of the application's exposed surface.
 
-Insights and Automation
+## Insights and Automation
+
 Through these exercises, several key insights were gained:
 
-Understanding Mechanisms: Interacting with the Nikto CLI by changing options, observing logs, and analyzing HTTP response codes provides a deeper understanding of how vulnerability scanners operate.
+  * **Understanding Mechanisms:** Interacting with the Nikto CLI by changing options, observing logs, and analyzing HTTP response codes provides a deeper understanding of how vulnerability scanners operate.
+  * **Targeting Servers vs. Endpoints:** It became clear that Nikto primarily targets the server itself and its common web directories, rather than specific REST API endpoints. The root URL (IP/hostname and port) is the critical target for this type of scanner.
+  * **Leveraging CLI Options:** The `evasion` and `mutate` switches are particularly useful for dynamic encoding techniques and guessing additional files, respectively, enhancing the scanning process.
 
-Targeting Servers vs. Endpoints: It became clear that Nikto primarily targets the server itself and its common web directories, rather than specific REST API endpoints. The root URL (IP/hostname and port) is the critical target for this type of scanner.
+To streamline the execution of various Nikto scans with different options, a bash script has been included in this repository (`run_scans.sh`). This script automates multiple executions as an example of how to efficiently test different configurations and features of Nikto.
 
-Leveraging CLI Options: The evasion and mutate switches are particularly useful for dynamic encoding techniques and guessing additional files, respectively, enhancing the scanning process.
+## Further Exploration
 
-To streamline the execution of various Nikto scans with different options, a bash script has been included in this repository (run_scans.sh). This script automates multiple executions as an example of how to efficiently test different configurations and features of Nikto.
-
-Further Exploration
 While this project focused on Nikto, the initial research unveiled several other highly valuable resources for server hardening and security configuration:
 
-NIST Guidelines: An extensive theoretical resource offering thorough explanations and detailed information for achieving commonly agreed-upon server hardening measures.
+  * **NIST Guidelines:** An extensive theoretical resource offering thorough explanations and detailed information for achieving commonly agreed-upon server hardening measures.
+  * **CIS Security Configuration Guides/Benchmarks:** An impressive collection of prescriptive configuration recommendations for a wide array of vendor products, providing painstaking levels of detail for different categories like network devices, server software, and operating systems.
+  * **OWASP Application Security Verification Standard (ASVS) v14:** Relevant for its emphasis on integrating security checks throughout the entire software development lifecycle.
+  * **OWASP Testing Guide: Testing for Error Codes:** A crucial guide specifically addressing error handling, a well-known security vulnerability, and providing actionable insights and additional resources like the error handling cheat sheet.
+  * **OWASP Configuration and Deployment Management Testing:** This resource addresses a range of issues, offering ad-hoc descriptions and solutions for concerns like file extensions, network configuration, application platform settings, backups, and path confusion.
 
-CIS Security Configuration Guides/Benchmarks: An impressive collection of prescriptive configuration recommendations for a wide array of vendor products, providing painstaking levels of detail for different categories like network devices, server software, and operating systems.
-
-OWASP Application Security Verification Standard (ASVS) v14: Relevant for its emphasis on integrating security checks throughout the entire software development lifecycle.
-
-OWASP Testing Guide: Testing for Error Codes: A crucial guide specifically addressing error handling, a well-known security vulnerability, and providing actionable insights and additional resources like the error handling cheat sheet.
-
-OWASP Configuration and Deployment Management Testing: This resource addresses a range of issues, offering ad-hoc descriptions and solutions for concerns like file extensions, network configuration, application platform settings, backups, and path confusion.*
+```
+```
