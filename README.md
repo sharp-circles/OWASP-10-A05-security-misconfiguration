@@ -1,6 +1,6 @@
 # OWASP-10-A05-security-misconfiguration
 
-# Server Security Misconfiguration Analysis with Nikto
+## Server Security Misconfiguration Analysis with Nikto
 
 This repository contains the findings and methodology used to analyze server security misconfigurations, primarily utilizing the Nikto web scanner. The aim was to explore the practical application of a vulnerability scanner in identifying potential weaknesses arising from improper server configurations.
 
