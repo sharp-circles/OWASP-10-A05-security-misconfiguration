@@ -120,6 +120,3 @@ While this project focused on Nikto, the initial research unveiled several other
   * **OWASP Application Security Verification Standard (ASVS) v14:** Relevant for its emphasis on integrating security checks throughout the entire software development lifecycle.
   * **OWASP Testing Guide: Testing for Error Codes:** A crucial guide specifically addressing error handling, a well-known security vulnerability, and providing actionable insights and additional resources like the error handling cheat sheet.
   * **OWASP Configuration and Deployment Management Testing:** This resource addresses a range of issues, offering ad-hoc descriptions and solutions for concerns like file extensions, network configuration, application platform settings, backups, and path confusion.
-
-```
-```
